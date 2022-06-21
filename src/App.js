@@ -7,12 +7,14 @@ import contacts from "./data/contacts.json";
 
 const App = () => {
   // Masukkan Header dan Contact ke dalam div App
-  return (
+  const contactData = contacts.map(contact => 
+    <Contact data={contact} key={contact.name}/>
+    );
+  
+    return (
     <div className="App">
-      <Header />
-      {contacts.map((d, i) => (
-        <Contact key={i} data={d} />
-      ))}
+      <Header/>
+      {contactData}
     </div>
   );
 };
