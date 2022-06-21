@@ -10,7 +10,7 @@ const Contact = ({data}) => {
                 <div className='contact-photo'>
                     <img src={data.photo} alt={`Photo profil ${data.name}`} />
                 </div>
-                <div className='contact-box'>
+                <div className='contact-detail'>
                     <h1>{data.name}</h1>
                     <p>{data.phone}</p>
                     <p>{data.email}</p>
